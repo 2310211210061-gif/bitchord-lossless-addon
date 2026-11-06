@@ -1,0 +1,35 @@
+{
+  "name": "bitchord-addon",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc --skipLibCheck",
+    "start": "node dist/src/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "tsx src/test.ts"
+  },
+  "keywords": [
+    "bitchord",
+    "addon",
+    "music",
+    "streaming",
+    "jiosaavn",
+    "flac"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "High-fidelity BitChord music streaming addon",
+  "dependencies": {
+    "@hono/node-server": "^2.1.4",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^26.6.5",
+    "crypto-js": "^4.2.0",
+    "hono": "^4.13.13",
+    "music-metadata": "^12.1.1",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}
